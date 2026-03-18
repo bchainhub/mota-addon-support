@@ -1,7 +1,7 @@
 {
 	support: {
 		enabled: true,
-		email: "$expr(process.env.PUBLIC_SUPPORT_EMAIL)",
+		email: "$expr(\"process.env.PUBLIC_SUPPORT_EMAIL\")",
 		requireCoreId: false,
 		ai: {
 			enabled: true,
