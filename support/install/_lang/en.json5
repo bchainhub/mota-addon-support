@@ -1,0 +1,31 @@
+{
+	"$path": "modules.support",
+	title: "Support",
+	supportType: "Support Type",
+	askAI: "Ask AI",
+	createTicket: "Create Ticket",
+	subject: "Subject",
+	question: "Question",
+	coreId: "Core ID",
+	followUpQuestion: "Follow-up Question",
+	askYourQuestion: "Ask your question…",
+	send: "Send",
+	processing: "Processing…",
+	sendTicketByEmail: "Send Ticket by Email",
+	aiResponse: "AI Response",
+	errors: {
+		pleaseEnterYourQuestion: "Please enter your question",
+		aiServiceNotAvailable: "AI service is not available",
+		supportEmailNotConfigured: "Support email is not configured",
+		anErrorOccurredWhileAskingAI: "An error occurred while asking AI",
+		failedToGetAIResponse: "Failed to get AI response",
+		supportIsNotAvailable: "Support is not available",
+		coreIdError: "Please enter a valid Core ID"
+	},
+	subjects: {
+		general: "General Inquiry",
+		account: "Account Inquiry",
+		technical: "Technical Question",
+		other: "Other"
+	}
+}
