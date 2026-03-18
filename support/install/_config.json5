@@ -1,0 +1,15 @@
+{
+	support: {
+		enabled: true,
+		email: "$expr(process.env.PUBLIC_SUPPORT_EMAIL)",
+		requireCoreId: false,
+		ai: {
+			enabled: true,
+			model: "gpt-4o-mini",
+			systemMessage: "You are a helpful support assistant. Provide clear, accurate, and helpful answers.",
+			subjects: ["general", "account", "technical", "other"],
+			temperature: 0.4,
+			maxTokens: 150
+		}
+	}
+}

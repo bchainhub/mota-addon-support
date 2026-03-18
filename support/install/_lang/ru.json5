@@ -1,0 +1,31 @@
+{
+	"$path": "modules.support",
+	title: "Поддержка",
+	supportType: "Тип поддержки",
+	askAI: "Спросить ИИ",
+	createTicket: "Создать тикет",
+	subject: "Тема",
+	question: "Вопрос",
+	coreId: "Core ID",
+	followUpQuestion: "Дополнительный вопрос",
+	askYourQuestion: "Задайте свой вопрос…",
+	send: "Отправить",
+	processing: "Обработка…",
+	sendTicketByEmail: "Отправить тикет по электронной почте",
+	aiResponse: "Ответ ИИ",
+	errors: {
+		pleaseEnterYourQuestion: "Пожалуйста, введите ваш вопрос",
+		aiServiceNotAvailable: "Сервис ИИ недоступен",
+		supportEmailNotConfigured: "Электронная почта поддержки не настроена",
+		anErrorOccurredWhileAskingAI: "Произошла ошибка при обращении к ИИ",
+		failedToGetAIResponse: "Не удалось получить ответ от ИИ",
+		supportIsNotAvailable: "Поддержка недоступна",
+		coreIdError: "Пожалуйста, введите корректный Core ID"
+	},
+	subjects: {
+		general: "Общий запрос",
+		account: "Вопрос по аккаунту",
+		technical: "Технический вопрос",
+		other: "Другое"
+	}
+}
