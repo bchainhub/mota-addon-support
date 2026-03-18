@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Addon cache (when running addon from this repo)
+.addon-cache/
+
+# Env and logs
+.env
+.env.*
+*.log
+npm-debug.log*
