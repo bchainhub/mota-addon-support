@@ -38,7 +38,27 @@ The addon does **not** add a page or modify your `$components` barrel. To use `<
 <Support />
 ```
 
-You can place `<Support />` on a dedicated support page (e.g. `src/routes/[[lang]]/support/+page.svelte`) or inside a layout. The component supports `mode="ai"` (default) and `mode="ticket"`.
+### Example: support page with optional type (ai / ticket) and config gate
+
+Route: `src/routes/[[lang]]/support/[[type]]/+page.svelte` — URL `/support`, `/support/ai`, or `/support/ticket` sets the initial mode.
+
+```svelte
+<script lang="ts">
+  import { Support } from '$components/support';
+  import { page } from '$app/stores';
+  import { getSiteConfig } from '$lib/helpers/siteConfig';
+
+  const __cfg = getSiteConfig();
+  $: type = $page.params.type || 'ai';
+  $: initialMode = (type === 'ticket' ? 'ticket' : 'ai') as 'ai' | 'ticket';
+</script>
+
+{#if (__cfg?.modules as { support?: { enabled?: boolean } } | undefined)?.support?.enabled}
+  <Support mode={initialMode} />
+{/if}
+```
+
+You can place `<Support />` on a dedicated support page or inside a layout. The component supports `mode="ai"` (default) and `mode="ticket"`.
 
 ## Configuration
 
