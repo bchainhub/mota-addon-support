@@ -1,0 +1,31 @@
+{
+	"$path": "modules.support",
+	title: "支持",
+	supportType: "支持类型",
+	askAI: "询问 AI",
+	createTicket: "创建工单",
+	subject: "主题",
+	question: "问题",
+	coreId: "Core ID",
+	followUpQuestion: "后续问题",
+	askYourQuestion: "请输入您的问题…",
+	send: "发送",
+	processing: "处理中…",
+	sendTicketByEmail: "通过邮件发送工单",
+	aiResponse: "AI 回复",
+	errors: {
+		pleaseEnterYourQuestion: "请输入您的问题",
+		aiServiceNotAvailable: "AI 服务不可用",
+		supportEmailNotConfigured: "未配置支持邮箱",
+		anErrorOccurredWhileAskingAI: "询问 AI 时发生错误",
+		failedToGetAIResponse: "无法获取 AI 回复",
+		supportIsNotAvailable: "支持不可用",
+		coreIdError: "请输入有效的 Core ID"
+	},
+	subjects: {
+		general: "一般咨询",
+		account: "账户咨询",
+		technical: "技术问题",
+		other: "其他"
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"$path": "modules.support",
+	title: "サポート",
+	supportType: "サポートの種類",
+	askAI: "AIに質問",
+	createTicket: "チケットを作成",
+	subject: "件名",
+	question: "質問",
+	coreId: "Core ID",
+	followUpQuestion: "フォローアップの質問",
+	askYourQuestion: "質問を入力してください…",
+	send: "送信",
+	processing: "処理中…",
+	sendTicketByEmail: "メールでチケットを送る",
+	aiResponse: "AIの回答",
+	errors: {
+		pleaseEnterYourQuestion: "質問を入力してください",
+		aiServiceNotAvailable: "AIサービスは利用できません",
+		supportEmailNotConfigured: "サポート用メールが設定されていません",
+		anErrorOccurredWhileAskingAI: "AIへの問い合わせ中にエラーが発生しました",
+		failedToGetAIResponse: "AIからの応答を取得できませんでした",
+		supportIsNotAvailable: "サポートは利用できません",
+		coreIdError: "有効なCore IDを入力してください"
+	},
+	subjects: {
+		general: "一般的なお問い合わせ",
+		account: "アカウントに関するお問い合わせ",
+		technical: "技術的な質問",
+		other: "その他"
+	}
+}

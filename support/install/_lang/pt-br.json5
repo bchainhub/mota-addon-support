@@ -1,0 +1,31 @@
+{
+	"$path": "modules.support",
+	title: "Suporte",
+	supportType: "Tipo de suporte",
+	askAI: "Perguntar à IA",
+	createTicket: "Criar chamado",
+	subject: "Assunto",
+	question: "Pergunta",
+	coreId: "Core ID",
+	followUpQuestion: "Pergunta de acompanhamento",
+	askYourQuestion: "Digite sua pergunta…",
+	send: "Enviar",
+	processing: "Processando…",
+	sendTicketByEmail: "Enviar chamado por e-mail",
+	aiResponse: "Resposta da IA",
+	errors: {
+		pleaseEnterYourQuestion: "Digite sua pergunta",
+		aiServiceNotAvailable: "O serviço de IA não está disponível",
+		supportEmailNotConfigured: "O e-mail de suporte não está configurado",
+		anErrorOccurredWhileAskingAI: "Ocorreu um erro ao consultar a IA",
+		failedToGetAIResponse: "Não foi possível obter a resposta da IA",
+		supportIsNotAvailable: "O suporte não está disponível",
+		coreIdError: "Digite um Core ID válido"
+	},
+	subjects: {
+		general: "Consulta geral",
+		account: "Consulta de conta",
+		technical: "Pergunta técnica",
+		other: "Outro"
+	}
+}

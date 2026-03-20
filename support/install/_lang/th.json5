@@ -1,0 +1,31 @@
+{
+	"$path": "modules.support",
+	title: "การสนับสนุน",
+	supportType: "ประเภทการสนับสนุน",
+	askAI: "ถาม AI",
+	createTicket: "สร้างตั๋ว",
+	subject: "หัวข้อ",
+	question: "คำถาม",
+	coreId: "Core ID",
+	followUpQuestion: "คำถามติดตาม",
+	askYourQuestion: "พิมพ์คำถามของคุณ…",
+	send: "ส่ง",
+	processing: "กำลังดำเนินการ…",
+	sendTicketByEmail: "ส่งตั๋วทางอีเมล",
+	aiResponse: "คำตอบจาก AI",
+	errors: {
+		pleaseEnterYourQuestion: "กรุณากรอกคำถามของคุณ",
+		aiServiceNotAvailable: "บริการ AI ไม่พร้อมใช้งาน",
+		supportEmailNotConfigured: "ยังไม่ได้ตั้งค่าอีเมลฝ่ายสนับสนุน",
+		anErrorOccurredWhileAskingAI: "เกิดข้อผิดพลาดขณะสอบถาม AI",
+		failedToGetAIResponse: "ไม่สามารถรับคำตอบจาก AI ได้",
+		supportIsNotAvailable: "การสนับสนุนไม่พร้อมใช้งาน",
+		coreIdError: "กรุณากรอก Core ID ที่ถูกต้อง"
+	},
+	subjects: {
+		general: "สอบถามทั่วไป",
+		account: "สอบถามบัญชี",
+		technical: "คำถามด้านเทคนิค",
+		other: "อื่นๆ"
+	}
+}

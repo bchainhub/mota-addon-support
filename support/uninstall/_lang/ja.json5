@@ -1,0 +1,4 @@
+{
+	"$path": "modules",
+	"$remove": { "support": true }
+}
