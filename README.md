@@ -1,6 +1,6 @@
 # Support Addon for MOTA with AI
 
-Support addon for MOTA: adds an AI-backed support component and optional ticket-by-email. Configurable via `modules.support` in `vite.config.ts` (merged on install). Uses [typesafe-i18n](https://github.com/ivanhofer/typesafe-i18n) for translations (en, sk, ru).
+Support addon for MOTA: adds an AI-backed support component and optional ticket-by-email. Configurable via `modules.support` in `vite.config.ts` (merged on install). Uses [typesafe-i18n](https://github.com/ivanhofer/typesafe-i18n) for translations (en, sk, ru, es, ja, pt-br, th, zh-cn).
 
 ## Requirements
 
@@ -22,7 +22,7 @@ npx addon bchainhub/mota-addon-support support install
 - **Component** — `src/lib/components/support/Support.svelte` and `src/lib/components/support/index.ts` (exports `Support`).
 - **API route** — `src/routes/api/[version]/support/ai/+server.ts` (POST handler for the AI chat).
 - **Config** — Merged into the `modules` block in `vite.config.ts` under `support` (see [Configuration](#configuration)).
-- **Translations** — Merged into `src/i18n/en/index.ts`, `src/i18n/sk/index.ts`, `src/i18n/ru/index.ts` under `modules.support`.
+- **Translations** — Merged into `src/i18n/<locale>/index.ts` for en, sk, ru, es, ja, pt-br, th, zh-cn under `modules.support` (only locales that exist in your project are updated).
 
 After install, run your i18n step if needed (e.g. `npx typesafe-i18n --no-watch`).
 
@@ -110,7 +110,7 @@ npx addon bchainhub/mota-addon-support support uninstall
 ### What gets removed
 
 - The `support` block from `modules` in `vite.config.ts`.
-- The `support` translation block from `src/i18n/en/index.ts`, `src/i18n/sk/index.ts`, `src/i18n/ru/index.ts`.
+- The `support` translation block from `src/i18n/<locale>/index.ts` for en, sk, ru, es, ja, pt-br, th, zh-cn (matching files present in the project).
 - The support component files and the support API route (see addon’s `support/uninstall/_scripts.sh` for exact paths).
 
 After uninstall, remove any manual exports (e.g. `export { Support } from './support';`) from `src/lib/components/index.ts` if you had added them.
